@@ -1,0 +1,2 @@
+VS2005 + arcgis engine9.3
+不要问我为什么
