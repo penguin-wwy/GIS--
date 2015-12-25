@@ -1,2 +1,5 @@
 VS2005 + arcgis engine9.3
 不要问我为什么
+
+后已更改为
+VS2013 + arcgis engine10.2

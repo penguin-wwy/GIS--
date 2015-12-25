@@ -1,0 +1,13 @@
+F:\Projects\Spread_lots_of_times\Spread_lots_of_times\bin\Debug\Spread_lots_of_times.exe.config
+F:\Projects\Spread_lots_of_times\Spread_lots_of_times\bin\Debug\Spread_lots_of_times.exe
+F:\Projects\Spread_lots_of_times\Spread_lots_of_times\bin\Debug\Spread_lots_of_times.pdb
+F:\Projects\Spread_lots_of_times\Spread_lots_of_times\bin\Debug\AxInterop.esriControls.dll
+F:\Projects\Spread_lots_of_times\Spread_lots_of_times\obj\Debug\Spread_lots_of_times.csprojResolveAssemblyReference.cache
+F:\Projects\Spread_lots_of_times\Spread_lots_of_times\obj\Debug\AxInterop.esriControls.dll
+F:\Projects\Spread_lots_of_times\Spread_lots_of_times\obj\Debug\Spread_lots_of_times.csproj.ResolveComReference.cache
+F:\Projects\Spread_lots_of_times\Spread_lots_of_times\obj\Debug\Spread_lots_of_times.Form1.resources
+F:\Projects\Spread_lots_of_times\Spread_lots_of_times\obj\Debug\Spread_lots_of_times.Properties.Resources.resources
+F:\Projects\Spread_lots_of_times\Spread_lots_of_times\obj\Debug\Spread_lots_of_times.csproj.GenerateResource.Cache
+F:\Projects\Spread_lots_of_times\Spread_lots_of_times\obj\Debug\Spread_lots_of_times.exe
+F:\Projects\Spread_lots_of_times\Spread_lots_of_times\obj\Debug\Spread_lots_of_times.pdb
+F:\Projects\Spread_lots_of_times\Spread_lots_of_times\bin\Debug\ESRI.ArcGIS.Version.dll
