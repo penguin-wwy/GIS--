@@ -1,5 +1,0 @@
-F:\Projects\Spread_lots_of_times\Spread_lots_of_times\bin\Debug\Spread_lots_of_times.exe.config
-F:\Projects\Spread_lots_of_times\Spread_lots_of_times\obj\Debug\AxInterop.esriControls.dll
-F:\Projects\Spread_lots_of_times\Spread_lots_of_times\obj\Debug\Spead_lots_of_times.csproj.ResolveComReference.cache
-F:\Projects\Spread_lots_of_times\Spread_lots_of_times\obj\Debug\Spread_lots_of_times.exe
-F:\Projects\Spread_lots_of_times\Spread_lots_of_times\obj\Debug\Spread_lots_of_times.pdb

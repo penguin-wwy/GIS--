@@ -1,0 +1,14 @@
+F:\Projects\how_trouble\how_trouble\bin\Debug\how_trouble.exe.config
+F:\Projects\how_trouble\how_trouble\bin\Debug\how_trouble.exe
+F:\Projects\how_trouble\how_trouble\bin\Debug\how_trouble.pdb
+F:\Projects\how_trouble\how_trouble\bin\Debug\ESRI.ArcGIS.Version.dll
+F:\Projects\how_trouble\how_trouble\bin\Debug\AxInterop.esriControls.dll
+F:\Projects\how_trouble\how_trouble\obj\Debug\how_trouble.csprojResolveAssemblyReference.cache
+F:\Projects\how_trouble\how_trouble\obj\Debug\AxInterop.esriControls.dll
+F:\Projects\how_trouble\how_trouble\obj\Debug\how_trouble.csproj.ResolveComReference.cache
+F:\Projects\how_trouble\how_trouble\obj\Debug\how_trouble.Form1.resources
+F:\Projects\how_trouble\how_trouble\obj\Debug\how_trouble.Properties.Resources.resources
+F:\Projects\how_trouble\how_trouble\obj\Debug\how_trouble.csproj.GenerateResource.Cache
+F:\Projects\how_trouble\how_trouble\obj\Debug\how_trouble.exe
+F:\Projects\how_trouble\how_trouble\obj\Debug\how_trouble.pdb
+F:\Projects\how_trouble\how_trouble\obj\Debug\how_trouble.AttributeTableFrm.resources
