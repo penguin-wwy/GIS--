@@ -82,6 +82,7 @@ namespace how_trouble
                 false, esriCommandStyles.esriCommandStyleTextOnly);                 /*添加“移除图层”菜单项*/
             m_menuLayer.AddItem(new ZoomToLayer(), -1, 1,
                 true, esriCommandStyles.esriCommandStyleTextOnly);                  /*添加“放大到整个图层”菜单项*/
+           
 
             //设置菜单的Hook
             m_menuLayer.SetHook(m_mapControl);
@@ -127,6 +128,9 @@ namespace how_trouble
             OpenNewMapDocument openMapDoc = new OpenNewMapDocument(m_controlsSynchronizer);
             openMapDoc.OnCreate(m_controlsSynchronizer.MapControl.Object);
             openMapDoc.OnClick();
+            //为每一个的framework controls,设置Buddy control为PageLayoutControl
+            m_controlsSynchronizer.SetBuddies(m_pageLayoutControl.Object);
+
         }
 
         private void Add_Data_MenuItem_Click(object sender, EventArgs e)
@@ -138,6 +142,8 @@ namespace how_trouble
             //在添加数据AddData时，我们也要进行地图共享
             IMap pMap = this.axMapControl1.Map;
             this.m_controlsSynchronizer.ReplaceMap(pMap);
+            //为每一个的framework controls,设置Buddy control为PageLayoutControl
+            m_controlsSynchronizer.SetBuddies(m_pageLayoutControl.Object);
         }
 
         private void Save_MenuItem_Click(object sender, EventArgs e)
@@ -202,8 +208,11 @@ namespace how_trouble
                 //取得鼠标所在工具的 ToolbarItem
                 IToolbarItem toolbarTerm = axToolbarControl1.GetItem(index);
 
-                //设置状态栏信息
-                MessageLabel.Text = toolbarTerm.Command.Message;
+                if(null == toolbarTerm.Command)
+                    MessageLabel.Text = "无";
+                else
+                    //设置状态栏信息
+                    MessageLabel.Text = toolbarTerm.Command.Message;
             }
             else
             {
@@ -394,8 +403,11 @@ namespace how_trouble
             {
                 //动态添加OpenAttributeTable菜单项
                 m_menuLayer.AddItem(new OpenAttributeTable(layer), -1, 2, true, esriCommandStyles.esriCommandStyleTextOnly);
+                //动态添加Shape_Analyze菜单项
+                m_menuLayer.AddItem(new Shape_Analyze(layer), -1, 2, true, esriCommandStyles.esriCommandStyleTextOnly);
                 m_menuLayer.PopupMenu(e.x, e.y, m_tocControl.hWnd);
                 //移除OpenAttributeTable菜单项，以防止重复添加
+                m_menuLayer.Remove(2);
                 m_menuLayer.Remove(2);
             }
         }
@@ -407,6 +419,33 @@ namespace how_trouble
                 //弹出右键菜单
                 m_menuMap.PopupMenu(e.x, e.y, m_mapControl.hWnd);
             }
+        }
+
+        private void shp_MenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("图层右击选择shape_analyze →_→ ", "傻逼");
+        }
+
+        private void mxd_MenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.axMapControl1.LayerCount <= 0)
+            {
+                MessageBox.Show("你TM在逗我 %>_<% ", "傻逼");
+            }
+            else 
+            {
+                MessageBox.Show("勉为其难，帮你一下 >\"<|||| ", "傻逼");
+                for (int i = 0; i < this.axMapControl1.LayerCount; i++)
+                {
+                    Shape_Analyze p = new Shape_Analyze(this.axMapControl1.get_Layer(i));
+                    p.set_Python_Argv();
+                }
+            }
+        }
+
+        private void go_die_MenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("自己写脚本去 ⊙﹏⊙", "傻逼");
         }
 
     }

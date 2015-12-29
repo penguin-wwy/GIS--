@@ -78,16 +78,16 @@ namespace how_trouble
         }
 
         //取得当前活动的Control
-        public Control ActiveControl
+        public object ActiveControl
         {
             get
             {
                 if (null == m_mapControl || null == m_pageLayoutControl)
                     throw new Exception("ControlsSynchronizer::ActiveControl:\r\nEither MapControl or PageLayoutControl are not initialized!");
                 if (m_IsMapCtrlactive)
-                    return (Control)m_mapControl.Object;
+                    return m_mapControl.Object;
                 else
-                    return (Control)m_pageLayoutControl.Object;
+                    return m_pageLayoutControl.Object;
             }
         }
 
@@ -249,7 +249,7 @@ namespace how_trouble
             m_frameworkControls.RemoveAt(index);
         }
 
-        private void SetBuddies(object buddy)
+        public void SetBuddies(object buddy)
         {
             try
             {

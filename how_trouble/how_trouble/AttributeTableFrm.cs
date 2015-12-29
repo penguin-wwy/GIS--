@@ -192,7 +192,8 @@ namespace how_trouble
         public static string getShapeType(ILayer pLayer)
         {
             IFeatureLayer pFeatLyr = (IFeatureLayer)pLayer;
-
+            
+           //pFeatLyr.FeatureClass.Fields.get_Field()
             switch (pFeatLyr.FeatureClass.ShapeType)
             {
                 case esriGeometryType.esriGeometryPoint:
